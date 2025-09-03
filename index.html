@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="txt" type="text" placeholder="enter item">
+
+    <button onclick="additem()">click to add</button>
+    <ul id="mylist"></ul>
+    <script>
+        function additem(){
+        let item = document.getElementById('txt').value
+        let list = document.getElementById('mylist')
+        const newitem = document.createElement('li')
+        newitem.textContent = item
+        list.appendChild(newitem)
+        }
+    </script>
+</body>
+</html>
